@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("p1").innerHTML = fruits[1]
+        document.getElementById("p2").innerHTML =fruits.join(" ¤ ")
+        document.getElementById("p3").innerHTML = fruits.pop();
+
+
+function add(a,b){
+    return a+b;
+}
+function average(a,b){
+    return add(a,b)/2;
+}
+let results = average(10,20);
+document.getElementById("p4").innerHTML = results;
+    </script>
+</body>
+</html>
