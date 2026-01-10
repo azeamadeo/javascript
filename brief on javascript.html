@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+var a=10
+var b=20
+var c=13
+var d=null
+var e; //undefined
+document.write
+document.write("a and b are equal:" + (a==b))
+document.write("<br>")
+document.write("b and c are equal:" + (b==c))  
+document.write("<br>")
+document.write("The value of d is:" + d)
+document.write("<br>")
+document.write("The value of e is:" + e)
+document.write("<br>")
+
+ </script> 
+<button onclick="myFunction()">Click me</button>
+<p id="hour"></p>
+<p id="greet"></p>
+<script>
+function myFunction() {
+  var greeting;
+  var time = new Date().getHours();
+ 
+  if (hour < 12) {
+    greet = "Good morning!";
+  } else if (hour < 18) {
+    greet = "Good afternoon!";
+  } else {
+    greet = "Good evening!";
+  }
+  document.getElementById("hour").innerHTML = "current hour is : " + time;
+  document.getElementById("greet").innerHTML = greet;
+}
+</script>
+<p id="number"></p>
+<script>
+    var test="";
+    var i = 0
+    while (i < 10) {
+      test += "<br> the number is " + i;
+      i++;
+    }
+    if (i == 6 || i == 7) {
+        test += "<br> the number is " + i + " and the loop is ended";
+    }
+    document.getElementById("number").innerHTML = test;
+</script>
+
+
+
+
+
+</body>
+</html>
